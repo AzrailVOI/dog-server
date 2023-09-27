@@ -8,7 +8,7 @@ const __dirname = dirname(__filename);
 dotenv.config();
 const app = express();
 const httpServer = http.createServer(app);
-const port = process.env.PORT;
+const port = 4444;
 app.use(express.static('serverPage'));
 app.get('/', (req, res) => {
     res.sendFile(__dirname + "/serverPage/index.html");
